@@ -1,0 +1,244 @@
+/* Reset */
+body, h1, h2, p, ul, li, img, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #2d394b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav ul {
+    display: flex;
+    gap: 1rem;
+}
+.nav a {
+    color: #9cc8f5;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background: url('mountain2.jpeg') no-repeat center center/cover; /* Hero image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text effect for readability */
+    padding-top: 80px; /* Adjust for fixed navbar */
+}
+.hero h1 {
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text effect for readability */
+
+}
+.hero p {
+    font-size: 1.5rem;
+    
+}
+.links {
+    display: flex;
+    gap: 1rem;
+}
+.links a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text effect for readability */
+
+}
+
+/* About Section */
+/* .about, .services, .gallery, .contact {
+    padding: 2rem;
+    text-align: center;
+} */
+
+/* Gallery Section */
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.gallery-images img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section
+.services ul {
+    padding-top: 1rem;
+}
+.services li {
+    padding: 0.5rem 0;
+} */
+/* Contact Section */
+.contact {
+    text-align: center; /* Center-align the section */
+    padding: 2rem;
+    background: #f7f9fc;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+    color: #585858;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text effect for readability */
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+}
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding does not affect size */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6fcef3;
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(49, 175, 54, 0.5); /* Focus effect */
+}
+.contact-form textarea {
+    resize: none; /* Prevent resizing */
+}
+.contact-form button {
+    display: block;
+    width: 100%;
+    background: #3b3b3b;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background: #3033f5;
+}
+.contact-form input:hover{
+    border-color: #6fcef3;
+}
+.contact-form textarea:hover{
+    border-color: #6fcef3;
+}
+
+        /* Add styles for the map */
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 500px;
+            border: solid, lightskyblue, 2px;
+        }
+
+        @media (max-width: 600px) {
+            .map {
+                height: 300px; /* Adjust height for smaller screens */
+            }
+        }
+        .footer {
+            background-color: #94c8fa;
+            color: #0c0c0c;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+            
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: #0c0c0c;
+            text-decoration: none;
+        }
+        
+        .footer-socials {
+            margin: 10px 0;
+        }
+        
+        .footer-socials a {
+            margin: 0 10px;
+        }
+        
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
